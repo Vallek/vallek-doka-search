@@ -1,0 +1,47 @@
+/* ==UserStyle==
+@name           doka.guide header search/menu button width 
+@namespace      github.com/openstyles/stylus
+@version        1.0
+@description    Растягивает кнопку вызова поиска и меню на всю ширину шапки и стилизует ее под инпут поиска
+@author         Vallek
+==/UserStyle== */
+
+@-moz-document domain("doka.guide") {
+	.header__breadcrumbs {
+		min-width: unset;
+	}
+  .header__category.header__category--standalone {
+    align-self: center;
+  }
+	.header:not(.header--open) .header__buttons {
+		width: 100%;
+		padding-left: 0.5em;
+    padding-right: 0.5em;
+    top: 0;
+	}
+	.hotkey.hotkey--search {
+    position: absolute;
+		flex-shrink: 0;
+    order: 2;
+	}
+	.header-button[aria-expanded="false"] {
+		width: 100%;
+    border-bottom: 2px solid var(--color-background);
+	}
+  .header-button {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+	}
+  .header-button-icon.header-button-icon--open::after {
+    opacity: .7;
+    font-family: "Spot Mono", monospace;
+    font-size: var(--font-size-l);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: inherit;
+    content: 'Поиск';
+  }
+  .header-button-icon__dot {
+    display: none;
+  }
+}
