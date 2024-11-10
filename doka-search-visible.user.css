@@ -24,13 +24,13 @@
 		flex-shrink: 0;
     order: 2;
 	}
-	.header-button[aria-expanded="false"] {
-		width: 100%;
-    border-bottom: 2px solid var(--color-background);
-	}
   .header-button {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+	}
+	.header-button[aria-expanded="false"] {
+		width: 100%;
+    border-bottom: 2px solid var(--color-background);
 	}
   .header-button-icon.header-button-icon--open::after {
     opacity: .7;
