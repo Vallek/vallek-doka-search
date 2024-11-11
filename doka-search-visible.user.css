@@ -51,7 +51,9 @@
   .header-button-icon__dot {
     display: none;
   }
-  .index-block__header {
-    padding-top: 0;
+  @media not all and (min-width: 1366px) {
+    .index-block__header {
+      padding-top: 0;
+    }
   }
 }
