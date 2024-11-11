@@ -5,6 +5,8 @@
 // @description  Помещает фокус на строку поиска при вызове меню мышью
 // @author       Vallek
 // @match        https://doka.guide/*
+// @exclude      https://doka.guide/
+// @exclude      https://doka.guide/index.html
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=doka.guide
 // @grant        none
 // ==/UserScript==
