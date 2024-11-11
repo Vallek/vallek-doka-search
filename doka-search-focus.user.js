@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Doka search focus with mouse
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.0.1
 // @description  Помещает фокус на строку поиска при вызове меню мышью
 // @author       Vallek
 // @match        https://doka.guide/*
